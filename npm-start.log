@@ -1,0 +1,49 @@
+
+> dc_front@1.15.0 start
+> ng serve --proxy-config proxy.conf.json --host 0.0.0.0
+
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues. You might need to use "--disable-host-check" if that's the
+case.
+    
+One or more browsers which are configured in the project's Browserslist configuration will be ignored as ES5 output is not supported by the Angular CLI.
+Ignored browsers: kaios 2.5, op_mini all
+- Generating browser application bundles (phase: setup)...
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files   | Names         |  Raw Size
+vendor.js             | vendor        |   5.14 MB |
+main.js               | main          | 963.39 kB |
+styles.css, styles.js | styles        | 631.75 kB |
+polyfills.js          | polyfills     | 390.29 kB |
+scripts.js            | scripts       | 191.90 kB |
+runtime.js            | runtime       |   6.85 kB |
+
+| Initial Total |   7.27 MB
+
+Build at: 2025-10-15T23:52:00.253Z - Hash: 76b1be21d273c285 - Time: 4117ms
+
+Warning: /Users/sonit/Desktop/Digiclips_Main/src/app/services/auth.service.ts depends on 'moment'. CommonJS or AMD dependencies can cause optimization bailouts.
+For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+
+
+
+** Angular Live Development Server is listening on 0.0.0.0:4200, open your browser on http://localhost:4200/ **
+
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+runtime.js          | runtime |  6.85 kB |
+
+5 unchanged chunks
+
+Build at: 2025-10-15T23:52:00.908Z - Hash: ff54a45fe8f3324d - Time: 584ms
+
+✔ Compiled successfully.

@@ -1,0 +1,5 @@
+#!/bin/bash
+export CHROME_BIN=$(which chromium-browser)
+ng test # Change this to be "false" if you want tests to automatically
+                 # re-run while you make changes. This basically keeps a browser
+                 # open with the test results.

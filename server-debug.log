@@ -1,0 +1,318 @@
+npm warn Unknown project config "arch". This will stop working in the next major version of npm.
+
+> digiclipsAPI@1.0.0 debug
+> cross-env NODE_ENV=development DEBUG=digiclipsAPI:* nodemon -L ./bin/www
+
+[33m[nodemon] 2.0.22[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+started 7 minutes cron
+started 20 minutes cron
+started 30 minutes cron
+started 60 minutes cron
+started 24 hours cron
+started 7 days cron
+started 14 days cron
+started 30 days cron
+Starting newspaper parser
+Starting magazine parser
+Newspaper hourly parser cron started
+Magazine hourly parser cron started
+Started generic email alert crons
+Daily guest search reset cron job started
+2025-10-15T23:51:33.405Z digiclipsAPI:server Listening on port 3000
+Setting up demo_requests table...
+Erro[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+started 7 minutes cron
+started 20 minutes cron
+started 30 minutes cron
+started 60 minutes cron
+started 24 hours cron
+started 7 days cron
+started 14 days cron
+started 30 days cron
+Starting newspaper parser
+Starting magazine parser
+Newspaper hourly parser cron started
+Magazine hourly parser cron started
+Started generic email alert crons
+Daily guest search reset cron job started
+Port 3000 is already in use
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+started 7 minutes cron
+started 20 minutes cron
+started 30 minutes cron
+started 60 minutes cron
+started 24 hours cron
+started 7 days cron
+started 14 days cron
+started 30 days cron
+Starting newspaper parser
+Starting magazine parser
+Newspaper hourly parser cron started
+Magazine hourly parser cron started
+Started generic email alert crons
+Daily guest search reset cron job started
+2025-10-16T00:11:57.276Z digiclipsAPI:server Listening on port 3000
+Setting up demo_requests table...
+Error reading SQL file: Error: ENOENT: no such file or directory, open '/Users/sonit/Desktop/Digiclips_Main/create_demo_requests_table.sql'
+    at Object.readFileSync (node:fs:435:20)
+    at /Users/sonit/Desktop/Digiclips_Main/server/services/demoRequestsSetupService.js:17:22
+    at new Promise (<anonymous>)
+    at Object.setupDemoRequestsTable (/Users/sonit/Desktop/Digiclips_Main/server/services/demoRequestsSetupService.js:11:10)
+    at Server.onListening (/Users/sonit/Desktop/Digiclips_Main/server/bin/www:95:30)
+    at Server.emit (node:events:519:35)
+    at emitListeningNT (node:net:1983:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sonit/Desktop/Digiclips_Main/create_demo_requests_table.sql'
+}
+Error setting up demo requests table: Error: ENOENT: no such file or directory, open '/Users/sonit/Desktop/Digiclips_Main/create_demo_requests_table.sql'
+    at Object.readFileSync (node:fs:435:20)
+    at /Users/sonit/Desktop/Digiclips_Main/server/services/demoRequestsSetupService.js:17:22
+    at new Promise (<anonymous>)
+    at Object.setupDemoRequestsTable (/Users/sonit/Desktop/Digiclips_Main/server/services/demoRequestsSetupService.js:11:10)
+    at Server.onListening (/Users/sonit/Desktop/Digiclips_Main/server/bin/www:95:30)
+    at Server.emit (node:events:519:35)
+    at emitListeningNT (node:net:1983:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sonit/Desktop/Digiclips_Main/create_demo_requests_table.sql'
+}
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+started 7 minutes cron
+started 20 minutes cron
+started 30 minutes cron
+started 60 minutes cron
+started 24 hours cron
+started 7 days cron
+started 14 days cron
+started 30 days cron
+Starting newspaper parser
+Starting magazine parser
+Newspaper hourly parser cron started
+Magazine hourly parser cron started
+Started generic email alert crons
+Daily guest search reset cron job started
+Port 3000 is already in use
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+e._compile (node:internal/modules/cjs/loader:1692:14)
+    at Object..js (node:internal/modules/cjs/loader:1824:10)
+    at Module.load (node:internal/modules/cjs/loader:1427:32)
+    at Module._load (node:internal/modules/cjs/loader:1250:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:152:5)
+    at node:internal/main/run_main_module:33:47 {
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true
+}
+Couldn't start newspaper parse
+Error: connect ETIMEDOUT
+    at Connection._handleConnectTimeout (/Users/sonit/Desktop/Digiclips_Main/server/node_modules/mysql/lib/Connection.js:409:13)
+    at Object.onceWrapper (node:events:621:28)
+    at Socket.emit (node:events:507:28)
+    at Socket._onTimeout (node:net:604:8)
+    at listOnTimeout (node:internal/timers:608:17)
+    at process.processTimers (node:internal/timers:543:7)
+    --------------------
+    at Protocol._enqueue (/Users/sonit/Desktop/Digiclips_Main/server/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/Users/sonit/Desktop/Digiclips_Main/server/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/Users/sonit/Desktop/Digiclips_Main/server/node_modules/mysql/lib/Connection.js:116:18)
+    at Pool.getConnection (/Users/sonit/Desktop/Digiclips_Main/server/node_modules/mysql/lib/Pool.js:48:16)
+    at Pool.query (/Users/sonit/Desktop/Digiclips_Main/server/node_modules/mysql/lib/Pool.js:202:8)
+    at /Users/sonit/Desktop/Digiclips_Main/server/routes/getNewspaperFeedsHandler.js:20:10
+    at new Promise (<anonymous>)
+    at queryDB (/Users/sonit/Desktop/Digiclips_Main/server/routes/getNewspaperFeedsHandler.js:19:10)
+    at Object.getFeeds (/Users/sonit/Desktop/Digiclips_Main/server/routes/getNewspaperFeedsHandler.js:8:14)
+    at Object.runParser (/Users/sonit/Desktop/Digiclips_Main/server/parser/newspaperParser.js:14:11)
+    at Object.startCron (/Users/sonit/Desktop/Digiclips_Main/server/services/cronNewspaperMagazineService.js:10:50)
+    at exports.cronEmailAlerts (/Users/sonit/Desktop/Digiclips_Main/server/cronServer.js:28:32)
+    at Object.<anonymous> (/Users/sonit/Desktop/Digiclips_Main/server/bin/www:104:17)
+    at Module._compile (node:internal/modules/cjs/loader:1692:14)
+    at Object..js (node:internal/modules/cjs/loader:1824:10)
+    at Module.load (node:internal/modules/cjs/loader:1427:32)
+    at Module._load (node:internal/modules/cjs/loader:1250:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:152:5)
+    at node:internal/main/run_main_module:33:47 {
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true
+}
+Couldn't cleanup magazine table
+Error: connect ETIMEDOUT
+    at Connection._handleConnectTimeout (/Users/sonit/Desktop/Digiclips_Main/server/node_modules/mysql/lib/Connection.js:409:13)
+    at Object.onceWrapper (node:events:621:28)
+    at Socket.emit (node:events:507:28)
+    at Socket._onTimeout (node:net:604:8)
+    at listOnTimeout (node:internal/timers:608:17)
+    at process.processTimers (node:internal/timers:543:7)
+    --------------------
+    at Protocol._enqueue (/Users/sonit/Desktop/Digiclips_Main/server/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/Users/sonit/Desktop/Digiclips_Main/server/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/Users/sonit/Desktop/Digiclips_Main/server/node_modules/mysql/lib/Connection.js:116:18)
+    at Pool.getConnection (/Users/sonit/Desktop/Digiclips_Main/server/node_modules/mysql/lib/Pool.js:48:16)
+    at Pool.query (/Users/sonit/Desktop/Digiclips_Main/server/node_modules/mysql/lib/Pool.js:202:8)
+    at /Users/sonit/Desktop/Digiclips_Main/server/routes/magazineCleanupHandler.js:20:10
+    at new Promise (<anonymous>)
+    at queryDB (/Users/sonit/Desktop/Digiclips_Main/server/routes/magazineCleanupHandler.js:19:10)
+    at Object.cleanupMagazineTable (/Users/sonit/Desktop/Digiclips_Main/server/routes/magazineCleanupHandler.js:10:5)
+    at Object.runParser (/Users/sonit/Desktop/Digiclips_Main/server/parser/magazineParser.js:12:13)
+    at Object.startCron (/Users/sonit/Desktop/Digiclips_Main/server/services/cronNewspaperMagazineService.js:11:49)
+    at exports.cronEmailAlerts (/Users/sonit/Desktop/Digiclips_Main/server/cronServer.js:28:32)
+    at Object.<anonymous> (/Users/sonit/Desktop/Digiclips_Main/server/bin/www:104:17)
+    at Module._compile (node:internal/modules/cjs/loader:1692:14)
+    at Object..js (node:internal/modules/cjs/loader:1824:10)
+    at Module.load (node:internal/modules/cjs/loader:1427:32)
+    at Module._load (node:internal/modules/cjs/loader:1250:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:152:5)
+    at node:internal/main/run_main_module:33:47 {
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true
+}
+Couldn't get feeds
+Error: connect ETIMEDOUT
+    at Connection._handleConnectTimeout (/Users/sonit/Desktop/Digiclips_Main/server/node_modules/mysql/lib/Connection.js:409:13)
+    at Object.onceWrapper (node:events:621:28)
+    at Socket.emit (node:events:507:28)
+    at Socket._onTimeout (node:net:604:8)
+    at listOnTimeout (node:internal/timers:608:17)
+    at process.processTimers (node:internal/timers:543:7)
+    --------------------
+    at Protocol._enqueue (/Users/sonit/Desktop/Digiclips_Main/server/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/Users/sonit/Desktop/Digiclips_Main/server/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/Users/sonit/Desktop/Digiclips_Main/server/node_modules/mysql/lib/Connection.js:116:18)
+    at Pool.getConnection (/Users/sonit/Desktop/Digiclips_Main/server/node_modules/mysql/lib/Pool.js:48:16)
+    at Pool.query (/Users/sonit/Desktop/Digiclips_Main/server/node_modules/mysql/lib/Pool.js:202:8)
+    at /Users/sonit/Desktop/Digiclips_Main/server/routes/getMagazineFeedsHandler.js:20:10
+    at new Promise (<anonymous>)
+    at queryDB (/Users/sonit/Desktop/Digiclips_Main/server/routes/getMagazineFeedsHandler.js:19:10)
+    at Object.getFeeds (/Users/sonit/Desktop/Digiclips_Main/server/routes/getMagazineFeedsHandler.js:8:12)
+    at Object.runParser (/Users/sonit/Desktop/Digiclips_Main/server/parser/magazineParser.js:14:11)
+    at Object.startCron (/Users/sonit/Desktop/Digiclips_Main/server/services/cronNewspaperMagazineService.js:11:49)
+    at exports.cronEmailAlerts (/Users/sonit/Desktop/Digiclips_Main/server/cronServer.js:28:32)
+    at Object.<anonymous> (/Users/sonit/Desktop/Digiclips_Main/server/bin/www:104:17)
+    at Module._compile (node:internal/modules/cjs/loader:1692:14)
+    at Object..js (node:internal/modules/cjs/loader:1824:10)
+    at Module.load (node:internal/modules/cjs/loader:1427:32)
+    at Module._load (node:internal/modules/cjs/loader:1250:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:152:5)
+    at node:internal/main/run_main_module:33:47 {
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true
+}
+[0mGET /getCompanyName [33m401[0m 12.091 ms - -[0m
+[0mGET / [33m404[0m 9.562 ms - 139[0m
+[0mGET /getCompanyName [33m401[0m 2.391 ms - -[0m
+Connecting to SFTP server...
+SFTP Error: Error: connect: sftpConnect: Timed out while waiting for handshake
+    at Object.formatError (/Users/sonit/Desktop/Digiclips_Main/node_modules/ssh2-sftp-client/src/utils.js:57:18)
+    at SftpClient.connect (/Users/sonit/Desktop/Digiclips_Main/node_modules/ssh2-sftp-client/src/index.js:149:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async connectToSFTP (/Users/sonit/Desktop/Digiclips_Main/src/app/media-transfer/connect-sftp.cjs:40:9)
+    at async /Users/sonit/Desktop/Digiclips_Main/server/routes/media-transfer-api.js:214:36 {
+  code: 'ERR_GENERIC_CLIENT',
+  custom: true
+}
+SFTP upload error: Error: SFTP connection unavailable
+    at /Users/sonit/Desktop/Digiclips_Main/server/routes/media-transfer-api.js:218:23
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[0mPOST /media-transfer/upload [32m200[0m 41051.616 ms - 59[0m
+Email sent successfully
+MESSAGE ID: <98bfde9a-ec2c-4ce4-0a3f-ef60d2560ea4@gmail.com>
+[0mGET /media-transfer/send-email-info?email=dshett11@asu.edu&uid=6a36b74f-ef95-452c-92f5-e5540066ba3d&fileName=Midterm_Sonit.docx&subject=Testing%202&body=Testing%20testing&sender=spencha1@asu.edu [32m200[0m 1584.507 ms - 39[0m
+Connecting to SFTP server...
+SFTP Error: Error: connect: sftpConnect: Timed out while waiting for handshake
+    at Object.formatError (/Users/sonit/Desktop/Digiclips_Main/node_modules/ssh2-sftp-client/src/utils.js:57:18)
+    at SftpClient.connect (/Users/sonit/Desktop/Digiclips_Main/node_modules/ssh2-sftp-client/src/index.js:149:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async connectToSFTP (/Users/sonit/Desktop/Digiclips_Main/src/app/media-transfer/connect-sftp.cjs:40:9)
+    at async /Users/sonit/Desktop/Digiclips_Main/server/routes/media-transfer-api.js:214:36 {
+  code: 'ERR_GENERIC_CLIENT',
+  custom: true
+}
+SFTP upload error: Error: SFTP connection unavailable
+    at /Users/sonit/Desktop/Digiclips_Main/server/routes/media-transfer-api.js:218:23
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[0mPOST /media-transfer/upload [32m200[0m 41040.696 ms - 59[0m
+Email sent successfully
+MESSAGE ID: <285d1953-bb63-63ef-31f9-f947d989e705@gmail.com>
+[0mGET /media-transfer/send-email-info?email=sonitsaipenchala@gmail.com&uid=30587659-abbd-448a-80eb-9e3538d78962&fileName=Midterm_Sonit.docx&subject=Testing%202&body=Testing%20testing&sender=spencha1@asu.edu [32m200[0m 2163.392 ms - 39[0m
+[0mGET /media-download/30587659-abbd-448a-80eb-9e3538d78962/Midterm_Sonit.docx [33m404[0m 9.973 ms - 209[0m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+started 7 minutes cron
+started 20 minutes cron
+started 30 minutes cron
+started 60 minutes cron
+started 24 hours cron
+started 7 days cron
+started 14 days cron
+started 30 days cron
+Starting newspaper parser
+Starting magazine parser
+Newspaper hourly parser cron started
+Magazine hourly parser cron started
+Started generic email alert crons
+Daily guest search reset cron job started
+Port 3000 is already in use
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+started 7 minutes cron
+started 20 minutes cron
+started 30 minutes cron
+started 60 minutes cron
+started 24 hours cron
+started 7 days cron
+started 14 days cron
+started 30 days cron
+Starting newspaper parser
+Starting magazine parser
+Newspaper hourly parser cron started
+Magazine hourly parser cron started
+Started generic email alert crons
+Daily guest search reset cron job started
+Port 3000 is already in use
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+started 7 minutes cron
+started 20 minutes cron
+started 30 minutes cron
+started 60 minutes cron
+started 24 hours cron
+started 7 days cron
+started 14 days cron
+started 30 days cron
+Starting newspaper parser
+Starting magazine parser
+Newspaper hourly parser cron started
+Magazine hourly parser cron started
+Started generic email alert crons
+Daily guest search reset cron job started
+Port 3000 is already in use
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
