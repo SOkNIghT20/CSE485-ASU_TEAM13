@@ -1,0 +1,36 @@
+h3 Social Media Results
+hr
+div(class="container result-box")
+  table(class="table table-bordered table-striped")
+    tbody
+      each result, index in results
+        tr
+          td(style="width:10%; font-size:18px;")
+            div
+              - if (result.url == "") {
+                  | #{index + 1}
+              - } else {
+                  a(href=result.url)
+                    | #{index + 1}
+              - }
+          td
+            img(src=result.image, style="width:100px")
+          td(style="width:70%;")
+            table(class="table table-bordered table-striped")
+              tbody
+                tr
+                  td
+                    img(src="https://upload.wikimedia.org/wikipedia/commons/e/e1/YouTube_play_buttom_icon_%282013-2017%29.svg", height="20px")
+                  td(style="width: 80%; font-size:14px;")
+                    | #{result.author}
+                - if (result.attributes != null) {
+                tr
+                  td(style="width: 43%; font-size:14px;")
+                    | Views: #{result.attributes.views}
+                  td(style="width: 33%; font-size:14px;")
+                    | Likes: #{result.attributes.likes}
+                  td(style="width: 43%; font-size:14px;")
+                    | Dislikes: #{result.attributes.dislikes}
+                - }
+                tr(style="width: 43%; font-size:14px;")
+                  | #{result.title}

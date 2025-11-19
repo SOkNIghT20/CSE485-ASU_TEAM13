@@ -1,0 +1,38 @@
+link(rel='stylesheet', href='./pdfLayout.css')
+
+h1 Tam Nguyen
+ul#results
+  .container.result-box
+  if (results == 0)
+    p No results selected.
+  each result in results
+    // RESULT START
+    li
+      // THUMBNAIL HERE
+      .li-img
+        img(src='https://getuikit.com/v2/docs/images/placeholder_600x400.svg', alt='Thumbnail Placeholder Image')
+
+      // CLIP INFO
+      .li-text
+        div.results-line.details-link
+          | #{channel_name}
+        div.results-line
+          | #{date}
+        div.results-line
+            span(style='font-weight:bold') Location:
+            |  #{file_name}
+        div.results-line
+            span(style='font-weight:bold') Channel ID:
+            |  #{channel_id}
+
+      // SHOW KEYWORD MENTIONS IN CLIPå
+      div.results
+            each clip in groupData
+              | Time: #{clip.TimeCode}
+              br
+              - var text = clip.Result_Line;
+              - var line = text.replace(new RegExp(key, "gi"), function myFunction(x){ return " <span class='found-text-highlight'> " + x + " </span>";})
+              | !{line}
+              br
+              br
+        hr

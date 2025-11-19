@@ -1,0 +1,41 @@
+html(lang="en")
+  head
+    title Report Results
+    style
+      include style.css
+  div.container
+    ul#results
+      .container.result-box
+        h3 Magazine Results
+        hr
+      .container.result-box
+        if (results == 0)
+          p No results selected.
+        each result in results
+          // RESULT START
+          li
+            // CLIP INFO
+            .li-text
+              .results-line-title
+              - var title = result.Title;
+              - var titleLine = title.replace(new RegExp(key, "gi"), function myFunction(x){ return " <span class='found-text-highlight'>" + x + "</span>";})
+              a(href=result.Link, target="_blank") !{titleLine}
+
+              .results-line-body
+                .results-line-subtitle
+                  a(href=result.MagazineLink, target="_blank") #{result.Magazine}
+                  if (result.Author)
+                    span.results-line-author
+                    |  - #{result.Author}
+                  if (result.PublishDate)
+                    span.results-line-publish-date
+                    |  - #{result.PublishDate}
+                p
+                  - var text = result.Summary;
+                  - var line = "";
+                  - if (text !== null)
+                    - line = text.replace(new RegExp(key, "gi"), function myFunction(x){ return " <span class='found-text-highlight'>" + x + "</span>";})
+                  | !{line}
+                  br
+                  br
+                  br

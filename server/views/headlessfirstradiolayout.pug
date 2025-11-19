@@ -1,0 +1,36 @@
+ul#results
+  .container.result-box
+    h3 Television Results
+    hr
+  .container.result-box
+  if (results == 0)
+    p No results selected.
+  each result in results
+    // RESULT START
+    li
+      // THUMBNAIL HERE
+      //need to pass converted base64 to template in order to process image
+
+      // CLIP INFO
+      .li-text
+        div.results-line.details-link
+          | #{SName}
+        div.results-line
+          | #{TStamp}
+        div.results-line
+            span(style='font-weight:bold') Location:
+            |  #{FName}
+        div.results-line
+            span(style='font-weight:bold') Channel ID:
+            |  #{ID}
+
+      // SHOW KEYWORD MENTIONS IN CLIPå
+      div.results
+            each clip in groupData
+              | Time: #{clip.TStamp}
+              br
+              - var text = clip.TEXTS;
+              | !{text}
+              br
+              br
+        hr

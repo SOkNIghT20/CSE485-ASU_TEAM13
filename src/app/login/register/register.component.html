@@ -1,0 +1,56 @@
+<div class="register-container">
+  <div class="container main-text-box" >
+    Registration
+  </div>
+  <div class="container register-box">
+    <div class="row">
+      <label for="username-input" class="col-form-label right-align-label col-md-4">
+        Email address
+      </label>
+      <input type="text" autocomplete="nope"  id="username-input" class="form-control register-item col-md-7" placeholder="e.g. johndoe@gmail.com" autofocus [(ngModel)]="newUser.email">
+    </div>
+    <div class="row">
+      <label for="first-name-input" class="col-form-label right-align-label col-md-4">
+        First name
+      </label>
+      <input type="text" autocomplete="nope"  id="first-name-input" class="form-control register-item col-md-7" placeholder="e.g. John" [(ngModel)]="newUser.fname">
+    </div>
+    <div class="row">
+      <label for="last-name-input" class="col-form-label right-align-label col-md-4">
+        Last name
+      </label>
+      <input type="text" autocomplete="nope"  id="last-name-input" class="form-control register-item col-md-7" placeholder="e.g. Doe" [(ngModel)]="newUser.lname">
+    </div>
+    <div class="row">
+      <label for="password-input" class="col-form-label right-align-label col-md-4">
+        Password
+      </label>
+      <input type="password" id="password-input" class="form-control register-item col-md-7" [(ngModel)]="newUser.password">
+    </div>
+    <div class="row">
+      <label for="confirm-password-input" class="col-form-label right-align-label col-md-4">
+        Confirm password
+      </label>
+      <input type="password" autocomplete="nope"  id="confirm-password-input" class="form-control register-item col-md-7" [(ngModel)]="passwordCheck" (keyup.enter)="register()">
+      <div class="col-md-1 center-checkbox">
+    <label class="login-text small">
+      <input type="checkbox" (click)="togglePasswordVisibility()" style="margin-right: 5px;">Show Password
+    </label>
+  </div>
+    </div>
+    <div id="success-message" *ngIf="successMessage" ng-bind-html="successMessage" class="alert alert-success">
+	    {{successMessage}}
+    </div>
+    <div id="error-message" *ngIf="errorMessage" ng-bind-html="errorMessage"  class="alert alert-danger"> 
+	{{errorMessage}}
+    </div>	    
+    <div class="row row-button-group">
+      <span class="reg-btn">
+        <button id="register-btn" class="btn btn-outline-primary btn-block register-btn" (click)="register()">register</button>
+      </span>
+      <span class="cancel-btn">
+        <a routerLink="" id="cancel-btn" class="btn btn-outline-secondary btn-block register-btn">cancel</a>
+      </span>
+    </div>
+  </div>
+</div>

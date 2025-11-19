@@ -1,0 +1,14 @@
+{
+  "name": "speech-to-text",
+  "version": "1.0.0",
+  "description": "This project aims to get speech-to-text recoginition from video source files.",
+  "main": "audioToText.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "speech-to-text": "file:"
+  }
+}

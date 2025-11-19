@@ -1,0 +1,37 @@
+<div class="outermost-container">
+  <div class="container main-text-box">
+    Add a New Radio Station
+  </div>
+  <div class="container addRadio-box">
+    <div class="row">
+      <label for="name-input" class="col-form-label right-align-label col-md-3">
+        Radio Station Name
+      </label>
+      <input id="name-input" class="form-control addRadio-item col-md-3" [(ngModel)]="radio.name">
+      <label for="country-input" class="col-form-label right-align-label col-md-3">
+        Country
+      </label>
+      <input id="country-input" class="form-control addRadio-item col-md-3" [(ngModel)]="radio.country">
+    </div>
+    <div class="row">
+      <label for="state-input" class="col-form-label right-align-label col-md-3">
+        State/Province
+      </label>
+      <input id="state-input" class="form-control addRadio-item col-md-3" [(ngModel)]="radio.state">
+      <label for="city-input" class="col-form-label right-align-label col-md-3">
+        City
+      </label>
+      <input id="city-input" class="form-control addRadio-item col-md-3" [(ngModel)]="radio.city">
+    </div>
+    <div class="row">
+      <label for="home-URL-input" class="col-form-label right-align-label col-md-3">
+        URL to Radio's Source
+      </label>
+      <input id="home-URL-input" class="form-control addRadio-item col-md-3" [(ngModel)]="radio.url">
+    </div>
+    <div class="text-center">
+      <button [disabled]="!checkFilled()" class="btn btn-outline-primary submit-button"
+              (click)="addRadio()">Add Radio Station</button>
+    </div>
+  </div>
+</div>

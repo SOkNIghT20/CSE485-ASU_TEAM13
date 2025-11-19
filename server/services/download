@@ -1,0 +1,41 @@
+#!/bin/bash
+
+# Variables
+SOURCE="$1$2.mp4"
+FILENAME="$2"
+FORMAT="$3"
+START="$4"
+END="$5"
+OUTDIR="downloads"
+OUTFILE="${OUTDIR}/${FILENAME}_${START}_${END}.${FORMAT}"
+LOGFILE="${OUTDIR}/ffmpeg.log"
+
+echo "Source: $SOURCE"
+echo "Output: $OUTFILE"
+
+# Ensure downloads folder exists
+mkdir -p "$OUTDIR"
+
+# Copy the video locally
+if cp "$SOURCE" "$FILENAME.mp4"; then
+    echo "File copied successfully."
+else
+    echo "Failed to copy file from: $SOURCE"
+    echo "Failed to copy file from: $SOURCE" >> "$LOGFILE"
+    exit 1
+fi
+
+# Generate clip with ffmpeg, log output
+if ffmpeg -i "$FILENAME.mp4" -ss "$START" -to "$END" "$OUTFILE" -hide_banner > "$LOGFILE" 2>&1; then
+    echo "Clip generated: $OUTFILE"
+    echo "Clip generated: $OUTFILE" >> "$LOGFILE"
+else
+    echo "ffmpeg failed to generate clip"
+    echo "ffmpeg failed to generate clip" >> "$LOGFILE"
+    rm "$FILENAME.mp4"
+    exit 1
+fi
+
+# Clean up
+rm "$FILENAME.mp4"
+

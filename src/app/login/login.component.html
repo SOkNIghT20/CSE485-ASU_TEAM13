@@ -1,0 +1,63 @@
+<div class="login-container">
+  <div class="container welcome-box">
+    <h2>DigiClips</h2>
+  </div>
+  <div class="container login-box">
+    <input autocomplete="nope" id="email-input" type="text" class="form-control login-item" placeholder="Email Address" [(ngModel)]="email" (keyup.enter)="loginclicked()" autofocus>
+    <input autocomplete="nope" id="password-input" type="password" class="form-control login-item" placeholder="Password" [(ngModel)]="password" (keyup.enter)="loginclicked()">
+    <div *ngIf="errorMessage.length > 0" class="alert alert-danger">
+      {{errorMessage}}
+    </div>
+  
+    <div class="center-checkbox">
+      <label class="login-text small">
+        <input type="checkbox" (click)="togglePasswordVisibility()"> Show Password
+      </label>
+    </div>
+
+    <!-- Accept Terms and Remember Me Checkboxes -->
+    <div class="terms-remember-me">
+      <label class="login-text small">
+        <input type="checkbox" id="check1">
+        <a href="{{getTermsAndServicesLocation()}}" target="_blank">Accept Terms</a>
+      </label>
+
+      <label class="login-text small">
+        <input type="checkbox">Remember Me
+      </label>
+    </div>
+    
+    <button id="login-btn" class="btn btn-primary btn-block login-btn" (click)="loginclicked()">Login</button>
+    
+    <div class="links-container">
+      <a routerLink="/register" id="register-link" class="login-text small">Register</a>
+      <a routerLink="/passwordRecovery" id="forgot-password" class="login-text small">Forgot Password?</a>
+    </div>
+
+    <div class="divider">
+      <span class="divider-text">Or</span>
+    </div>
+    
+    <!-- Guest/Demo Access Section -->
+    <div class="guest-access">
+      <button (click)="applyForDemo()" class="btn btn-outline-secondary btn-block guest-btn">
+        Apply for Demo with Ads
+      </button>
+      <p class="text-center text-muted small mt-2">
+        Request a demo to get 5 free searches with ads
+      </p>
+    </div>
+    
+    <!-- Demo Request Success Message -->
+    <div *ngIf="demoRequestSubmitted" class="alert alert-success mt-3">
+      Your demo request has been submitted! You'll receive an email when your request is approved.
+    </div>
+  </div>
+</div>
+
+<!-- Demo Request Modal -->
+<app-demo-request-modal 
+  *ngIf="showDemoRequestModal" 
+  (close)="onDemoModalClose()" 
+  (submitted)="onDemoRequestSubmitted()">
+</app-demo-request-modal>

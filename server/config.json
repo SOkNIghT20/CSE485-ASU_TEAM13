@@ -1,0 +1,13 @@
+{
+  "email": {
+    "from": "DigiClipsEmail@gmail.com",
+    "host": "email-smtp.us-west-2.amazonaws.com",
+    "secure": true,
+    "port": 465,
+    "auth": {
+      "user": "AKIAZTS3FJFOOSN2TJQI",
+      "pass": "BCcpRbqTlBmpgCQbl21YzztpFjIuuDTB7WEIkuUGUnvv"
+    },
+    "debug": true
+  }
+}

@@ -1,0 +1,45 @@
+.register-container {
+  height: 100vh;
+}
+
+.main-text-box {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.register-box {
+  max-width: 600px;
+  padding: 20px;
+}
+
+.register-item {
+  margin-bottom: 10px;
+}
+
+.center-checkbox {
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+
+
+//Created seperated formatting for the buttons instead of hard-coded 
+.row-button-group{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.reg-btn, .cancel-btn{
+  flex: 1;
+  margin: 0 5px;
+}
+
+.register-btn{
+  height: 38px;
+  width: 100%;
+}

@@ -1,0 +1,38 @@
+html(lang="en")
+  head
+    title Report Results
+    style
+      include style.css
+  div.container
+    ul#results
+        .container.result-box
+          h3 Radio Results
+          hr
+        .container.result-box
+          if (results == 0)
+            p No results selected.
+          each result in results
+            // RESULT START
+            li
+              // CLIP INFO
+              .li-text
+                .results-line-title
+                - var title = result.FName;
+                a(href=result.DownloadLink, target="_blank") !{title}
+
+                .results-line-bodys
+                  .results-line-subtitle
+                    a(href=result.DownloadLink, target="_blank") #{result.Radio}
+                    if (result.SName)
+                      span.results-line-author
+                      |  - #{result.SName}
+                    if (result.TStamp)
+                      span.results-line-publish-date
+                      |  - #{result.TStamp}
+                  p
+                    - var text = result.TEXTS;
+                     - var titleLine = text.replace(new RegExp(key, "gi"), function myFunction(x){ return " <span class='found-text-highlight'>" + x + "</span>";})
+                       | !{titleLine}
+                    br
+                    br
+                    br

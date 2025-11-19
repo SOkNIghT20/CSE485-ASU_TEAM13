@@ -1,0 +1,38 @@
+ul#results
+  .container.result-box
+    h3 Television Results
+    hr
+    if (results == 0)
+      p No results selected.
+    each result in results
+      // RESULT START
+      li
+        // THUMBNAIL HERE
+        //need to pass converted base64 to template in order to process image
+        .li-img
+          img(src='', alt='Thumbnail Placeholder Image')
+
+          // CLIP INFO
+        .li-text
+          div.results-line.details-link
+          | #{channel_name}
+          div.results-line
+          | #{date}
+          div.results-line
+            span(style='font-weight:bold') Location:
+            |  #{file_name}
+          div.results-line
+            span(style='font-weight:bold') Channel ID:
+            |  #{channel_id}
+
+      // SHOW KEYWORD MENTIONS IN CLIPå
+      div.results
+            each clip in groupData
+              | Time: #{clip.TimeCode}
+              br
+              - var text = clip.Result_Line;
+              - var line = text.replace(new RegExp(key, "gi"), function myFunction(x){ return " <span class='found-text-highlight'> " + x + " </span>";})
+              | !{line}
+              br
+              br
+              hr

@@ -1,0 +1,27 @@
+# Build outputs
+dist/
+server/
+speech-to-text/
+
+# Test & e2e
+cypress/
+e2e/
+
+# Dependencies
+node_modules/
+
+# IDE & editor stuff
+.idea/
+.vscode/
+
+# Configs & setup scripts
+*.config.js
+*.conf.js
+*.cjs
+*.iml
+
+# Misc project files
+*.md
+*.yml
+*.zip
+*.txt

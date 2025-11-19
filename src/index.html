@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>DigiClips</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/058afad0e0.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <link rel="stylesheet" href="https://unpkg.com/ngx-bootstrap/datepicker/bs-datepicker.css">
+  
+  <!-- Google AdSense Code -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9469262490380516"
+     crossorigin="anonymous"></script>
+  <!-- End Google AdSense Code -->
+  
+  <!-- Google translate element begin -->
+  <script type="text/javascript">
+	  translated = {}
+          translated["English"] = "Language Translation"
+          translated["Spanish"] = "Traducción de idiomas"
+          translated["French"] = "La traduction de la langue"
+          translated["German"] = "Sprachübersetzung"
+          translated["Russian"] = "Языковой перевод"
+          translated["Czech"] = "Překlad jazyka"
+          translated["Dutch"] = "Taal vertaling"  
+	  translated["Swedish"] = "Språköversättning"
+	  translated["Select Language"] = "Language Translation"
+   function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+	   
+	   //var spanText = document.getElementById("google_translate_element").childNodes[0].childNodes[0].childNodes[1].childNodes[0];
+	    //spanText.firstChild.style.display = "none";
+	   // console.log(spanText.firstChild);
+	    //spanText.style.border = "thin solid black"
+	  //  spanText.appendChild( document.createTextNode(translated[spanText.firstChild.innerHTML]));
+    }
+	document.onreadystatechange = function () {
+	    	if (document.readyState=="complete") {
+		            // Initialize your application or run some code.
+			var lang = document.getElementById("translation-placeholder");
+			var cont = document.getElementById("container");
+			var cont2 = document.getElementById("langContainer2");
+			
+			// Only add event handlers if elements exist
+			if (lang) {
+				lang.onclick = function() {
+					var gteMenu = document.getElementsByClassName("goog-te-menu-value");
+					if (gteMenu && gteMenu.length > 0) {
+						gteMenu[0].click();
+					}
+				};
+			}
+			
+			if (cont) {
+				cont.onclick = function() {
+					var gteMenu = document.getElementsByClassName("goog-te-menu-value");
+					if (gteMenu && gteMenu.length > 0) {
+						gteMenu[0].click();
+					}
+				};
+			}
+			
+			console.log("Translation elements initialized");
+		}
+	}
+	
+    </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <!-- Here is all the downloadable icon formats -->
+  <!-- For apple -->
+  <link rel="apple-touch-icon" type="image/png" sizes="57x57" href="assets/images/logo-381.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="60×60" href="assets/images/logo-381.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="72x72" href="assets/images/logo-381.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="76×76" href="assets/images/log-381.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="114x114" href="assets/images/logo-381.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="120×120" href="assets/images/logo-381.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="144x144" href="assets/images/logo-381.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="152×152" href="assets/images/logo-381.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="160×160" href="assets/images/logo-381.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="180×180" href="assets/images/logo-381.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="196×196" href="assets/images/logo-381.png">
+
+  <!-- For android -->
+  <link rel="icon" type="image/png" sizes="128×128" href="assets/images/logo-381.png">
+  <link rel="icon" type="image/png" sizes="160×160" href="assets/images/logo-381.png">
+  <link rel="icon" type="image/png" sizes="192×192" href="assets/images/logo-381.png">
+
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>

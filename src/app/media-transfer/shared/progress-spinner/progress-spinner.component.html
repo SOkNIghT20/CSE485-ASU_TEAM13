@@ -1,0 +1,6 @@
+<div *ngIf="isLoading" class="spinner-container"> 
+  <p *ngIf="progress !== null && progress !== 100" class="loading-text">{{ progress }}%</p>
+  <!-- Switch between indeterminant and determinant spinners-->
+  <mat-spinner *ngIf="progress === null || progress === 100" [diameter]="50"></mat-spinner>
+  <mat-progress-spinner *ngIf="progress !== null && progress !== 100" [value]="progress" [diameter]="50"></mat-progress-spinner>
+</div>

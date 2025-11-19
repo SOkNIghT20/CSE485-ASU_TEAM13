@@ -1,0 +1,44 @@
+<div class="register-container">
+  <div class="container main-text-box">
+    Editing User Profile
+  </div>
+  <div class="container edit-profile-box">
+    <div class="row">
+      <label for="current-password-input" class="col-form-label right-align-label col-md-5">
+        Current Password
+      </label>
+      <input type="password" autocomplete="nope"  id="current-password-input" class="form-control edit-profile-item col-md-7" [(ngModel)]="currentPassword">
+    </div>
+    <div class="row">
+      <label for="new-password-input" class="col-form-label right-align-label col-md-5">
+        New Password
+      </label>
+      <input type="password" autocomplete="nope"  id="new-password-input" class="form-control edit-profile-item col-md-7" [(ngModel)]="newPassword">
+    </div>
+    <div class="row">
+      <label for="confirm-password-input" class="col-form-label right-align-label col-md-5">
+        Confirm New Password
+      </label>
+      <input type="password" autocomplete="nope"  id="confirm-password-input" class="form-control edit-profile-item col-md-7" [(ngModel)]="newPasswordCopy">
+    </div>
+<div class="center-checkbox">
+    <label class="login-text small">
+      <input type="checkbox" (click)="togglePasswordVisibility()" style="margin-right: 5px;">Show Password
+    </label>
+  </div>
+    <div *ngIf="newPasswordCopy != newPassword" class="alert alert-danger">
+      Passwords do not match.
+    </div>
+    <div *ngIf="errorMessage.length > 0" class="alert alert-danger">
+      {{errorMessage}}
+    </div>
+    <div class="row">
+      <span class="col-md-6">
+        <button id="register-btn" class="btn btn-outline-primary btn-block profile-btn" (click)="changePassword()">Register</button>
+      </span>
+      <span class="col-md-6">
+        <a routerLink="" id="cancel-btn" class="btn btn-outline-secondary btn-block profile-btn">Cancel</a>
+      </span>
+    </div>
+  </div>
+</div>

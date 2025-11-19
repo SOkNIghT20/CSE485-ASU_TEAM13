@@ -1,0 +1,14 @@
+/.angular/cache
+#
+node_modules/
+.DS_Store
+npm-debug.log
+bower_components
+build
+client.ovpn
+
+# Docker files
+server/docker-compose.yaml
+server/Dockerfile
+server/package-lock.json
+repo_push/

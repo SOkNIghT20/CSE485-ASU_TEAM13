@@ -1,0 +1,13 @@
+{
+  "name": "recursedir-comparisons",
+  "version": "0.0.0",
+  "author": "Ryan Day <soldair@gmail.com>",
+  "devDependencies": {
+    "findit": "*",
+    "fstream": "*",
+    "ls-r": "*"
+  },
+  "dependencies": {
+    "recursedir-comparisons": "file:"
+  }
+}

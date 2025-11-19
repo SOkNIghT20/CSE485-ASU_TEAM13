@@ -1,0 +1,115 @@
+
+
+.details-link {
+  font-weight: bold;
+  color: royalblue;
+  cursor: pointer;
+}
+
+.li-img {
+  display: table-cell;
+  vertical-align: middle;
+  width: 30%;
+  padding-right: 1em;
+  padding-bottom: 10px;
+}
+
+.li-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.result-box {
+  max-width: 1100px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: left;
+  page-break-inside: avoid;
+}
+
+ img {
+  display: table-cell;
+  vertical-align: middle;
+  width: 30%;
+  padding-right: 1em;
+  padding-bottom: 10px;
+}
+
+.li-text {
+  display: table-cell;
+  width: 65%;
+}
+
+.results-line {
+  padding-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.container{
+  font-size: 18px;
+  position: relative;
+  left: 10px;
+  right: 10px;
+  width: 95%;
+  margin-top: 0;
+
+}
+
+.found-text-highlight{
+  color: red;
+  font-weight: bold;
+}
+
+/* adding css for socialmedialayout.pug below */
+
+table.table-bordered > tbody > tr > td {
+  border: 2px solid;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.result-box {
+  max-width: 900px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.results-line-title {
+  font-size: 18px;
+  color: navy;
+}
+
+.li-text a {
+  text-decoration: none;
+}
+
+.results-line-body {
+  font-size: 14px;
+}
+
+.results-line-subtitle {
+  font-size: 12px;
+  color: gray;
+}
+
+.results-line-subtitle a {
+  text-decoration: none;
+  color: gray;
+}
+
+.results-line-subtitle .results-line-author {
+  text-transform: capitalize;
+}
+
+.found-text-highlight {
+  color: red;
+}
+

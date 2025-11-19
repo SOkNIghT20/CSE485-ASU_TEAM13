@@ -1,0 +1,73 @@
+<nav class="navbar navbar-expand-md navbar-toggleable-md navbar-light bg-faded">
+  <!-- <a class="navbar-brand" routerLink=""><img src="/assets/images/logo.svg" width="30" height="30" alt="">&nbsp;&nbsp;{{getCompanyName()}} &reg;</a> -->
+  <a class="navbar-brand" routerLink="" (click)="navigateToSearch()">
+    <img src="/assets/images/logo.svg" width="30" height="30" alt="">
+    &nbsp;&nbsp;{{getCompanyName()}} &reg;
+  </a>  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <!-- Google translator -->
+    <!-- <div id="google_translate_element"></div> -->
+    
+    <style>
+      .nav-link {
+        cursor: pointer;
+      }
+    </style>
+    
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" (click)="navigateToSearch()">Search</a>
+      </li>
+      <li class="nav-item" *ngIf="!auth.isGuestUser()">
+        <a class="nav-link" (click)="navigateToAlerts()">Email Alerts</a>
+      </li>
+      <li class="nav-item" *ngIf="!auth.isGuestUser()">
+        <a class="nav-link" (click)="navigateToMedia()">Media Analytics</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="navigateToTransfer()">Media Transfer</a>
+      </li>
+      <li class="nav-item">
+      <li class="nav-item" *ngIf="!auth.isGuestUser()">
+      	<a class="nav-link" id="translation-placeholder" style="cursor:pointer;">Language Translation</a>
+      </li>
+      <li style="width:0px;display:none;" >
+	      	<div id="container" style="position:relative; width:0;">
+			<div id="google_translate_element" style="width:0;"> 
+			</div>
+		</div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/customizeLogo" *ngIf = "isAdmin">Customize Logo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/addNews" *ngIf = "isAdmin">Add Newspaper</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/addMags" *ngIf = "isAdmin">Add Magazine</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/addRads" *ngIf = "isAdmin">Add Radio Station</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/contactUs" *ngIf = "isAdmin == false">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="navigateToHelp()">Help</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="navigateToSurvey()">Survey</a>
+      </li> 
+    </ul>
+
+    <ul class="navbar-nav" *ngIf="auth.isAuthenticated()">
+      <li>
+        <a class="nav-link sign-out" (click)="logout()" routerLink="">Sign out</a>
+      </li>
+    </ul>
+  </div>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</nav>
+<router-outlet></router-outlet>
